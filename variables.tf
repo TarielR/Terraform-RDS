@@ -20,8 +20,12 @@ variable "public_cidr_block" {
   default = "10.0.0.0/25"
 }
 
-variable "private_cidr_block" {
-  default = "10.0.0.128/25"
+variable "private1_cidr_block" {
+  default = "10.0.0.128/26"
+}
+
+variable "private2_cidr_block" {
+  default = "10.0.0.192/26"
 }
 
 variable "allow_ports" {

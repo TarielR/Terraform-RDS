@@ -7,7 +7,9 @@ module "vpc_rds" {
 
   common_tags = var.common_tags
 
-  private_cidr_block = var.private_cidr_block
+  private1_cidr_block = var.private1_cidr_block
+
+  private2_cidr_block = var.private2_cidr_block
 
   public_cidr_block = var.public_cidr_block
 }

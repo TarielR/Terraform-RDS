@@ -6,6 +6,10 @@ output "subnet2" {
   value = module.vpc_rds.subnet_az2
 }
 
+output "map_public_ip_on_launch" {
+  value = module.vpc_rds.map_public_ip_on_launch
+}
+
 output "rds_sg_id" {
   value = module.vpc_rds.vpc_sg_id
 }
