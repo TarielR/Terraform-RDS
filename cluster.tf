@@ -40,10 +40,10 @@ resource "aws_rds_cluster_instance" "cluster_instances" {
 
 
 ###########################
-variable "db_name" {
-  type = string
-  default = "my_cluster"
-}
+//variable "db_name" {
+//  type = string
+//  default = "my_cluster"
+//}
 
 ###########################
 output "db_subnet_group_id" {

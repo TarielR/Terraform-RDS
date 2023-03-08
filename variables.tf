@@ -7,10 +7,10 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-//variable "db_name" {
-//  type = string
-//  default = "aurora_cluster"
-//}
+variable "db_name" {
+  type = string
+  default = "my_cluster"
+}
 
 variable "common_cidr_block" {
   default = "10.0.0.0/24"
