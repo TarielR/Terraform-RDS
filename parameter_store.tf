@@ -3,7 +3,7 @@ variable "flag" {
 }
 
 resource "random_string" "rds_password" {
-  length = 8
+  length = 10
   special = false
   keepers = {
     keeper = var.flag
@@ -14,6 +14,7 @@ resource "aws_ssm_parameter" "rds_password" {
   name = "/dev/postgres"
   type = "SecureString"
   value = random_string.rds_password.result
+  description = "Master password for Aurora Cluster"
 }
 
 data "aws_ssm_parameter" "my_rds_password" {
